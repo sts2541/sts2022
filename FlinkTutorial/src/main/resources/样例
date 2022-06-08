@@ -1,0 +1,26 @@
+创建连接kafka表
+CREATE TABLE KafkaTable (
+`user` STRING,
+`url` STRING,
+`ts` TIMESTAMP(3) METADATA FROM 'timestamp'
+) WITH (
+'connector' = 'kafka',
+'topic' = 'events',
+'properties.bootstrap.servers' = 'localhost:9092',
+'properties.group.id' = 'testGroup',
+'scan.startup.mode' = 'earliest-offset',
+'format' = 'csv'
+);
+
+-- 创建一张连接到 MySQL 的 表
+CREATE TABLE MyTable (
+id BIGINT,
+name STRING,
+age INT,
+status BOOLEAN,
+PRIMARY KEY (id) NOT ENFORCED
+) WITH (
+'connector' = 'jdbc',
+'url' = 'jdbc:mysql://localhost:3306/mydatabase',
+'table-name' = 'users'
+);
