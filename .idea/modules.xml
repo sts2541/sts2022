@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" filepath="$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlinkTutorial/FlinkTutorial.iml" filepath="$PROJECT_DIR$/FlinkTutorial/FlinkTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaStudy/JavaStudy.iml" filepath="$PROJECT_DIR$/JavaStudy/JavaStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sts2022.iml" filepath="$PROJECT_DIR$/.idea/sts2022.iml" />
+    </modules>
+  </component>
+</project>
